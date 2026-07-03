@@ -185,7 +185,7 @@ def run_simulation():
                     if all(
                             item == 0
                             for i, sublist in enumerate(minion_list)
-                            if i != k
+                            if i != random_index
                             for item in sublist
                             if isinstance(item, (int, float))
                     ):

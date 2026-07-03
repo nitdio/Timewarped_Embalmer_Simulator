@@ -2,7 +2,7 @@ import random
 import copy
 import matplotlib.pyplot as plt
 
-minion_list_temp=[["Kill","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2]]
+minion_list_temp=[["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2],["SP","Reborn",2]]
 total_token_dict={}
 total_kill_dict={}
 
@@ -58,7 +58,7 @@ for i in range(100000):
                 if  all(
     item == 0
     for i, sublist in enumerate(minion_list)
-    if i != k
+    if i != random_index
     for item in sublist
     if isinstance(item, (int, float))
 ):
@@ -105,11 +105,11 @@ plt.bar(total_token_dict.keys(), total_token_dict.values())
 plt.title("Total Tokens")
 plt.xlabel("Total tokens")
 plt.ylabel("No_simulations")
-
+plt.savefig("total_tokens.png")
 plt.figure(figsize=(8, 5))
 plt.bar(total_kill_dict.keys(), total_kill_dict.values())
 plt.title("Total kills")
 plt.xlabel("Total Kills")
 plt.ylabel("No_simulations")
-#
-plt.show()
+
+plt.savefig("total_kills.png")
