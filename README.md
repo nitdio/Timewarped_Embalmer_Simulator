@@ -6,6 +6,7 @@ The simulation plays out repeated attacks:
 
 
 Even steps: minion at index 0 attacks.
+
 Odd steps: a random minion is attacked.
 
 
@@ -28,6 +29,7 @@ How many times the "Kill" minion was involved in an attack (as attacker or targe
 How to run it:
 
 in bash
+
 python3 main.py
 
 By default, it runs 100,000 simulations, which is a lot — each game usually resolves in well under 200 steps, so total runtime is mostly a function of how many trials you set at the top of the script:
@@ -42,4 +44,5 @@ The script produces two histograms:
 
 
 Total Tokens — distribution of how many tokens will be summoned, including the starting original number 
+
 Total Kills — distribution of how many times the Kill minion hit or is hit per simulation
