@@ -1,5 +1,5 @@
-import tkinter as tk
-from tkinter import ttk
+import viewer as tk
+from viewer import ttk
 import random
 import copy
 import matplotlib.pyplot as plt
