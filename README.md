@@ -1,6 +1,6 @@
 Reborn Combat Simulator
 
-A Monte Carlo simulation of a Hearthstone Battleground interaction between Timewarped Embalmer (SP) and insta kill minions (Kill) (leeory or venomous minions)
+A Monte Carlo simulation of a Hearthstone Battleground interaction between Golden Timewarped Embalmer (SP) and insta kill minions (Kill) (leeory or venomous minions)
 
 The simulation plays out repeated attacks:
 
